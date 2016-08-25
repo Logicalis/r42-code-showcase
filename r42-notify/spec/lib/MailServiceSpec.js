@@ -1,12 +1,16 @@
 const MailService = require('../../lib/services/MailService');
-const TranporterMock = require('./TranporterMock');
 
 describe('MailService', () => {
     let mailService;
 
+    const fakeTransporter = {
+        sendMail(mail, callback) {
+            callback()
+        }
+    };
+
     beforeEach(function() {
-        const transporterMock = new TranporterMock();
-        mailService = new MailService(transporterMock);
+        mailService = new MailService(fakeTransporter);
     });
 
     it('should send a valid email', function (done) {
