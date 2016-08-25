@@ -8,9 +8,9 @@ const transporter = nodemailer.createTransport('smtps://joquinha12345678@gmail.c
 
 const myMailService = new MailService(transporter);
 
-stdio.question('Qual o e-mail do destinatário?', (err, to) => {
-    stdio.question('Qual o assunto do e-mail?', (err, subject) => {
-        stdio.question('Qual o conteúdo da mensagem? (HTML)', (err, html) => {
+stdio.question('E-mail do destinatário', (err, to) => {
+    stdio.question('Assunto do e-mail', (err, subject) => {
+        stdio.question('Conteúdo da e-mail (HTML)', (err, html) => {
             console.log('Enviando e-mail...');
             myMailService
                 .send({

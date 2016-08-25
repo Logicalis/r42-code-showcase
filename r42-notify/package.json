@@ -4,7 +4,7 @@
   "description": "R42 Notify",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js --seneca.log.quiet",
+    "start": "node index.js",
     "test": "jasmine",
     "test.watch": "gulp tests.watch",
     "coverage": "istanbul cover node_modules\\jasmine\\bin\\jasmine.js"
