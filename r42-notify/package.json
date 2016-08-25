@@ -1,0 +1,28 @@
+{
+  "name": "r42-ng-notify",
+  "version": "1.0.1",
+  "description": "R42 Notify",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js --seneca.log.quiet",
+    "test": "jasmine",
+    "test.watch": "gulp tests.watch",
+    "coverage": "istanbul cover node_modules\\jasmine\\bin\\jasmine.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "log4js": "0.6.38",
+    "nodemailer": "2.3.0",
+    "stdio": "^0.2.7"
+  },
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-cli": "1.2.0",
+    "grunt-easy-rpm": "1.5.6",
+    "gulp": "^3.9.1",
+    "gulp-jasmine": "^2.4.0",
+    "istanbul": "^0.4.5",
+    "jasmine": "2.4.1"
+  }
+}
