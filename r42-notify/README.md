@@ -1,5 +1,5 @@
 # r42-notify
-A simple service that send notifications
+A simple service that send notifications - only e-mails for the moment.
 
 ## Installation
 
@@ -13,6 +13,7 @@ npm install
 ```
 
 ## Usage
+After installing the dependencies, just run:
 ```shell
 npm start
 ```
